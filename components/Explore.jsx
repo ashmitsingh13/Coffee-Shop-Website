@@ -18,7 +18,7 @@ const Explore = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20 text-center mx-auto">
-          <div className="shadow-xl cursor-pointer p-5 rounded-lg">
+          <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all">
             <h1 className="text-3xl font-semibold text-gray-900">Our Catering</h1>
             <p>
               Mominto Catering delicious <br />
@@ -33,7 +33,7 @@ const Explore = () => {
               Order Catering
             </Button>
           </div>
-          <div className="shadow-xl cursor-pointer p-5 rounded-lg">
+          <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all">
             <h1 className="text-3xl font-semibold text-gray-900">The Food</h1>
             <p>Our entire menu is available as <br />dine in or takeways.</p>
             <Image src="/images/ExploreIcon2.png"
@@ -43,7 +43,7 @@ const Explore = () => {
             className="mx-auto mb-4 py-6" />
             <Button className="uppercase p-6 rounded-md shadow-lg hover:scale-105 transition-all text-lg font-normal tracking-wide">food menu</Button>
           </div>
-          <div className="shadow-xl cursor-pointer p-5 rounded-lg">
+          <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all">
             <h1 className="text-3xl font-semibold text-gray-900"> The Gelato</h1>
             <p>Life is like GELATO, enjoy it <br />before it melts</p>
             <Image src="/images/ExploreIcon3.png"
