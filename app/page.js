@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Banner from '../components/Banner';
 import Explore from '../components/Explore';
 import OrderCoffee from '../components/OrderCoffee';
+import SellingCoffee from '../components/SellingCoffee';
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
     <Banner/>
     <Explore />
     <OrderCoffee />
+    <SellingCoffee />
     </>
   )
 }
