@@ -5,6 +5,7 @@ import Explore from '../components/Explore';
 import OrderCoffee from '../components/OrderCoffee';
 import SellingCoffee from '../components/SellingCoffee';
 import InstantCoffee from '../components/InstantCoffee';
+import Client from '../components/Client';
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
     <OrderCoffee />
     <SellingCoffee />
     <InstantCoffee />
+    <Client />
     </>
   )
 }
