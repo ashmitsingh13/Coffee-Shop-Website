@@ -2,6 +2,7 @@ import React from 'react'
 import Header from "../components/Header"
 import Banner from '../components/Banner';
 import Explore from '../components/Explore';
+import OrderCoffee from '../components/OrderCoffee';
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
     <Header />
     <Banner/>
     <Explore />
+    <OrderCoffee />
     </>
   )
 }

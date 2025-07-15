@@ -5,9 +5,8 @@ import { Button } from "@/components/ui/button";
 const Explore = () => {
   return (
     <>
-      <div  className="conatiner w-full px-20 pb-24">
+      <div  className="w-full px-4 md:px-10 lg:px-20 md:py-10 lg:py-20">
         <div className="max-w-screen-xl mx-auto">
-
         <div className="grid grid-cols-6 text-center py-14">
           <div className="col-start-2 col-span-4">
             <h1 className="text-5xl font-bold">Explore Our Mominto</h1>
