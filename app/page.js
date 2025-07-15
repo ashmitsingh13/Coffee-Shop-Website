@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import Explore from '../components/Explore';
 import OrderCoffee from '../components/OrderCoffee';
 import SellingCoffee from '../components/SellingCoffee';
+import InstantCoffee from '../components/InstantCoffee';
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
     <Explore />
     <OrderCoffee />
     <SellingCoffee />
+    <InstantCoffee />
     </>
   )
 }
