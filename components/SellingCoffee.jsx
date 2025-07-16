@@ -1,6 +1,8 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const SellingCoffee = () => {
   return (
@@ -11,16 +13,27 @@ const SellingCoffee = () => {
             <div className="col-start-2 col-span-4">
               <h1 className="text-5xl font-bold">Best Selling Coffee</h1>
               <p className="py-2 text-gray-500 text-lg">
-               Enjoy our “My Mominto” bottled brews <br />
-  or grab one of our delicious handcrafted coffees.
+                Enjoy our “My Mominto” bottled brews <br />
+                or grab one of our delicious handcrafted coffees.
               </p>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mx-auto">
-            <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
+            <motion.div
+              className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }}
+              viewport={{ once: true }}
+            >
               <div className="selling-upper grid grid-cols-1 md:grid-cols-2">
                 <div>
-                  <Image src="/images/SellingUpper1.png" alt="Double Espresso Coffee" width={300} height={300} />
+                  <Image
+                    src="/images/SellingUpper1.png"
+                    alt="Double Espresso Coffee"
+                    width={300}
+                    height={300}
+                  />
                 </div>
                 <div className="flex flex-col justify-center items-start">
                   <p className="py-2 text-gray-500 text-lg">#1 Selling</p>
@@ -45,11 +58,22 @@ const SellingCoffee = () => {
                   </Button>
                 </div>
               </div>
-            </div>
-            <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
+            </motion.div>
+            <motion.div
+              className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }}
+              viewport={{ once: true }}
+            >
               <div className="selling-upper grid grid-cols-1 md:grid-cols-2">
                 <div>
-                  <Image src="/images/SellingUpper2.png" alt="Caramel Frappe Coffee" width={300} height={300} />
+                  <Image
+                    src="/images/SellingUpper2.png"
+                    alt="Caramel Frappe Coffee"
+                    width={300}
+                    height={300}
+                  />
                 </div>
                 <div className="flex flex-col justify-center items-start">
                   <p className="py-2 text-gray-500 text-lg">#2 Selling</p>
@@ -74,11 +98,22 @@ const SellingCoffee = () => {
                   </Button>
                 </div>
               </div>
-            </div>
-            <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
+            </motion.div>
+            <motion.div
+              className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }}
+              viewport={{ once: true }}
+            >
               <div className="selling-upper grid grid-cols-1 md:grid-cols-2">
                 <div>
-                  <Image src="/images/SellingUpper3.png" alt="Iced Coffee" width={300} height={300} />
+                  <Image
+                    src="/images/SellingUpper3.png"
+                    alt="Iced Coffee"
+                    width={300}
+                    height={300}
+                  />
                 </div>
                 <div className="flex flex-col justify-center items-start">
                   <p className="py-2 text-gray-500 text-lg">#3 Selling</p>
@@ -103,7 +138,7 @@ const SellingCoffee = () => {
                   </Button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
-import React from "react";
-
+"use client"
+import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <>
       <div className="w-full px-4 md:px-10 lg:px-20 md:py-10 lg:py-20 text-black bg-[#f3f4f5]">
         <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
+          <motion.div className="grid grid-cols-1 gap-8 lg:grid-cols-3" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }} viewport={{ once: true }}>
             <div>
               <div className="flex justify-center text-black sm:justify-start text-2xl font-semibold">
                 MOMINTO
@@ -284,9 +284,9 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="pt-6 mt-12 border-t border-gray-800" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
+          <motion.div className="pt-6 mt-12 border-t border-gray-800" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }} viewport={{ once: true }}>
             <div className="text-center sm:flex sm:justify-between sm:text-left">
               <p className="text-sm text-black">
                 <span className="block sm:inline">All rights reserved.</span>
@@ -312,7 +312,7 @@ const Footer = () => {
                 &copy; 2025 MOMINTO
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

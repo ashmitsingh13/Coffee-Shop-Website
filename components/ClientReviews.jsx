@@ -1,15 +1,22 @@
+"use client"
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
-import { Button } from "@headlessui/react";
 import { FaRegStar } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Client = () => {
   return (
     <>
       <div className="w-full px-4 sm:px-6 md:px-10 lg:px-20 py-10">
         <div className="max-w-screen-xl mx-auto">
-          <div className="grid grid-cols-6 text-center py-10 px-4">
+          <motion.div
+            className="grid grid-cols-6 text-center py-10 px-4"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
             <div className="col-start-1 sm:col-start-2 col-span-6 sm:col-span-4">
               <h1 className="text-3xl sm:text-5xl font-bold">
                 Client Testimonial
@@ -70,9 +77,15 @@ const Client = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mx-auto">
-            <div className="shadow-lg hover:shadow-2xl cursor-pointer rounded-lg hover:scale-105 transition-all" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
+            <motion.div
+              className="shadow-lg hover:shadow-2xl cursor-pointer rounded-lg hover:scale-105 transition-all"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }}
+              viewport={{ once: true }}
+            >
               <div className="client-upper h-1/2 bg-[#E5E5E5] flex justify-center">
                 <Image
                   src="/images/ClientImage1.png"
@@ -111,8 +124,14 @@ const Client = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="shadow-md hover:shadow-2xl cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-all bg-white" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
+            </motion.div>
+            <motion.div
+              className="shadow-md hover:shadow-2xl cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-all bg-white"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }}
+              viewport={{ once: true }}
+            >
               <div className="client-upper h-1/2 bg-[#E5E5E5] flex justify-center">
                 <Image
                   src="/images/ClientImage2.png"
@@ -153,8 +172,14 @@ const Client = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="shadow-md hover:shadow-2xl cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-all bg-white" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
+            </motion.div>
+            <motion.div
+              className="shadow-md hover:shadow-2xl cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-all bg-white"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.05, duration: 1, ease: "easeInOut" }}
+              viewport={{ once: true }}
+            >
               <div className="client-upper h-1/2 bg-[#E5E5E5] flex justify-center">
                 <Image
                   src="/images/ClientImage3.png"
@@ -192,7 +217,7 @@ const Client = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
