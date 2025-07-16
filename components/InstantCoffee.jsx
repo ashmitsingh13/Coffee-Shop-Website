@@ -7,7 +7,7 @@ const InstantCoffee = () => {
     <>
       <div className="w-full bg-[#f3f4f5] px-4 md:px-10 lg:px-20 md:py-10 lg:py-20">
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="banner-left my-24 flex flex-col justify-center items-center md:items-start gap-6">
+          <div className="banner-left my-24 flex flex-col justify-center items-center md:items-start gap-6" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
             <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold">
               Order Your
               <br />
@@ -32,6 +32,7 @@ const InstantCoffee = () => {
               width={500}
               height={500}
               className="w-full max-w-[400px]"
+              data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'
             />
           </div>
         </div>

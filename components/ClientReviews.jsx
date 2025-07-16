@@ -72,7 +72,7 @@ const Client = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mx-auto">
-            <div className="shadow-lg hover:shadow-2xl cursor-pointer rounded-lg hover:scale-105 transition-all">
+            <div className="shadow-lg hover:shadow-2xl cursor-pointer rounded-lg hover:scale-105 transition-all" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
               <div className="client-upper h-1/2 bg-[#E5E5E5] flex justify-center">
                 <Image
                   src="/images/ClientImage1.png"
@@ -112,7 +112,7 @@ const Client = () => {
                 </div>
               </div>
             </div>
-            <div className="shadow-md hover:shadow-2xl cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-all bg-white">
+            <div className="shadow-md hover:shadow-2xl cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-all bg-white" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
               <div className="client-upper h-1/2 bg-[#E5E5E5] flex justify-center">
                 <Image
                   src="/images/ClientImage2.png"
@@ -154,7 +154,7 @@ const Client = () => {
                 </div>
               </div>
             </div>
-            <div className="shadow-md hover:shadow-2xl cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-all bg-white">
+            <div className="shadow-md hover:shadow-2xl cursor-pointer rounded-lg overflow-hidden hover:scale-105 transition-all bg-white" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
               <div className="client-upper h-1/2 bg-[#E5E5E5] flex justify-center">
                 <Image
                   src="/images/ClientImage3.png"

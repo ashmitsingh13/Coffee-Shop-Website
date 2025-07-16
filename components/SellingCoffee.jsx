@@ -17,7 +17,7 @@ const SellingCoffee = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mx-auto">
-            <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all">
+            <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
               <div className="selling-upper grid grid-cols-1 md:grid-cols-2">
                 <div>
                   <Image src="/images/SellingUpper1.png" alt="Double Espresso Coffee" width={300} height={300} />
@@ -46,7 +46,7 @@ const SellingCoffee = () => {
                 </div>
               </div>
             </div>
-            <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all">
+            <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
               <div className="selling-upper grid grid-cols-1 md:grid-cols-2">
                 <div>
                   <Image src="/images/SellingUpper2.png" alt="Caramel Frappe Coffee" width={300} height={300} />
@@ -75,7 +75,7 @@ const SellingCoffee = () => {
                 </div>
               </div>
             </div>
-            <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all">
+            <div className="shadow-lg hover:shadow-2xl cursor-pointer p-5 rounded-lg hover:scale-105 transition-all" data-aos='fade-left' data-aos-delay='50' data-aos-duration='1000' data-aos-easing='ease-in-out'>
               <div className="selling-upper grid grid-cols-1 md:grid-cols-2">
                 <div>
                   <Image src="/images/SellingUpper3.png" alt="Iced Coffee" width={300} height={300} />
