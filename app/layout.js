@@ -14,8 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={jost.className}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={jost.className} cz-shortcut-listen="true" suppressHydrationWarning>
         {children}
       </body>
     </html>
